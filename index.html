@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+
+        <title>Crud - Cadastrar Produtos</title>
+    </head>
+    <header>
+        <h1 class="title">Crud - Cadastro de Produtos</h1>
+    </header>
+
+    <!--Conteudo principal-->
+    <body>
+        
+        <!--Tabela-->
+        <table>
+            <tr>
+                <td>
+                    <form autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label for="codProduto">Código do Produto</label>
+                            <input type="text" name="codProduto" id="codProduto">
+                        </div>
+                        <div>
+                            <label for="descProduto">Descrição do Produto</label>
+                            <input type="text" name="descProduto" id="descProduto">
+                        </div>
+                        <div>
+                            <label for="Qtd">Quantidade</label>
+                            <input type="number" name="Qtd" id="Qtd">
+                        </div>
+                        <div>
+                            <label for="Valor">Valor</label>
+                            <input type="number" name="Valor" id="Valor">
+                        </div>
+                        <div class="form_action--button">
+                            <input type="submit" value="Cadastrar">
+                            <input type="reset" value="Resetar">
+                        </div>
+                    </form>
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Descrição</th>
+                                <th>Quantidade</th>
+                                <th>Valor $</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+                </td>
+            </tr>
+        </table>
+        
+        <!--Script Javascript-->
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

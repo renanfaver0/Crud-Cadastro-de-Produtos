@@ -1,0 +1,102 @@
+/* Estilização corpo da aplicação */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+/*Título da aplicação*/
+.title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Estilização da tabela*/
+table {
+    width: 80%;
+    margin: 40px auto;
+    background: rgb(100, 149, 237);
+}
+
+.list {
+    width: 100%;
+    text-align: center;
+}
+
+td {
+    border: 1px solid rgb(204, 200, 200);
+    text-align: left;
+    padding: 8px 15px;
+}
+
+tr:nth-child(even).list thread>tr {
+    background-color: rgb(204, 200, 200);
+}
+
+/*Inputs do tipo texto e número aplicados na tabela */
+input[type="text"],
+input[type="number"] {
+    width: 91%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 4px;
+}
+
+/*Inputs e estilizações dos botões de Cadastrar e Resetar*/
+input[type="submit"],
+input[type="reset"] {
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background: #32CD32;
+}
+
+input[type="reset"]:hover {
+    background: #FF6347;
+}
+
+/*Estilização dos botões de Editar e Deletar*/
+button {
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background: #FFD700;
+}
+
+/*Media query adicionadas para ajudar na responsividade*/
+@media (min-width: 400px) and (max-width: 800px) {
+
+    body,
+    .title,
+    table,
+    form,
+    .list,
+    td,
+    input,
+    button {
+        width: 100%;
+    }
+}
